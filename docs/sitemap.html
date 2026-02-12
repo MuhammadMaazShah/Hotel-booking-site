@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sitemap | HotelDeals - Site Navigation Map</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+html { scroll-behavior: smooth; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.page-container { animation: fadeIn 0.6s ease forwards; }
+
+.nav--scrolled { box-shadow: 0 10px 30px rgba(2, 6, 23, 0.06); backdrop-filter: blur(6px); }
+
+.sitemap-link {
+  transition: all 0.2s ease;
+}
+
+.sitemap-link:hover {
+  transform: translateX(4px);
+}
+</style>
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+<!-- NAVBAR -->
+<nav class="fixed w-full z-40 bg-white/90 backdrop-blur border-b">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    <a href="index.html" class="text-xl font-bold text-blue-600">HotelDeals</a>
+    <div class="hidden md:flex gap-6">
+      <a href="index.html" class="hover:text-blue-600">Home</a>
+      <a href="index.html#cities" class="hover:text-blue-600">Cities</a>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE CONTENT -->
+<div class="page-container">
+  
+  <!-- HERO SECTION -->
+  <section class="pt-28 pb-12 px-4 bg-gradient-to-br from-blue-50 to-blue-100">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Sitemap</h1>
+      <p class="text-lg text-gray-700 mb-6">Complete navigation map of all HotelDeals pages and resources</p>
+      <a href="index.html" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+        ← Back to Home
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTENT SECTION -->
+  <section class="py-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- Main Pages -->
+        <div class="bg-white rounded-2xl shadow-lg p-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+            <span class="text-3xl mr-3">🏠</span> Main Pages
+          </h2>
+          <ul class="space-y-3">
+            <li>
+              <a href="index.html" class="sitemap-link text-blue-600 hover:text-blue-700 font-semibold">Home</a>
+              <p class="text-gray-600 text-sm">Hotel search, featured cities, and feedback form</p>
+            </li>
+            <li>
+              <a href="index.html#cities" class="sitemap-link text-blue-600 hover:text-blue-700 font-semibold">Featured Cities</a>
+              <p class="text-gray-600 text-sm">Explore popular destinations (Shanghai, Bangkok, Tokyo, Hong Kong, Guangzhou)</p>
+            </li>
+            <li>
+              <a href="index.html#feedback" class="sitemap-link text-blue-600 hover:text-blue-700 font-semibold">Feedback & Rating</a>
+              <p class="text-gray-600 text-sm">Share your experience with us through our rating system</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Company Pages -->
+        <div class="bg-white rounded-2xl shadow-lg p-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+            <span class="text-3xl mr-3">🏢</span> Company
+          </h2>
+          <ul class="space-y-3">
+            <li>
+              <a href="about.html" class="sitemap-link text-blue-600 hover:text-blue-700 font-semibold">About HotelDeals</a>
+              <p class="text-gray-600 text-sm">Learn about our mission, values, and why choose us</p>
+            </li>
+            <li>
+              <a href="blog.html" class="sitemap-link text-blue-600 hover:text-blue-700 font-semibold">Blog</a>
+              <p class="text-gray-600 text-sm">Travel guides, tips, and exclusive deals</p>
+            </li>
+            <li>
+              <a href="careers.html" class="sitemap-link text-blue-600 hover:text-blue-700 font-semibold">Careers</a>
+              <p class="text-gray-600 text-sm">Join our team - open positions and benefits</p>
+            </li>
+            <li>
+              <a href="faq.html" class="sitemap-link text-blue-600 hover:text-blue-700 font-semibold">FAQ</a>
+              <p class="text-gray-600 text-sm">Answers to common questions about bookings</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Legal Pages -->
+        <div class="bg-white rounded-2xl shadow-lg p-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+            <span class="text-3xl mr-3">⚖️</span> Legal
+          </h2>
+          <ul class="space-y-3">
+            <li>
+              <a href="legal.html" class="sitemap-link text-blue-600 hover:text-blue-700 font-semibold">Legal Information</a>
+              <p class="text-gray-600 text-sm">Compliance and regulatory information</p>
+            </li>
+            <li>
+              <a href="terms.html" class="sitemap-link text-blue-600 hover:text-blue-700 font-semibold">Terms of Use</a>
+              <p class="text-gray-600 text-sm">Rules and guidelines for using HotelDeals</p>
+            </li>
+            <li>
+              <a href="privacy.html" class="sitemap-link text-blue-600 hover:text-blue-700 font-semibold">Privacy Policy</a>
+              <p class="text-gray-600 text-sm">How we collect and protect your data</p>
+            </li>
+            <li>
+              <a href="cookies.html" class="sitemap-link text-blue-600 hover:text-blue-700 font-semibold">Cookie Policy</a>
+              <p class="text-gray-600 text-sm">Information about cookies and tracking</p>
+            </li>
+            <li>
+              <a href="sitemap.html" class="sitemap-link text-blue-600 hover:text-blue-700 font-semibold">Sitemap</a>
+              <p class="text-gray-600 text-sm">Complete site navigation (you are here)</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- External Links -->
+        <div class="bg-white rounded-2xl shadow-lg p-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+            <span class="text-3xl mr-3">🔗</span> External Links
+          </h2>
+          <ul class="space-y-3">
+            <li>
+              <a href="https://www.trip.com" target="_blank" rel="noopener noreferrer" class="sitemap-link text-blue-600 hover:text-blue-700 font-semibold">
+                Trip.com
+                <span class="text-sm text-gray-500">↗</span>
+              </a>
+              <p class="text-gray-600 text-sm">Our main booking partner and affiliate program</p>
+            </li>
+            <li>
+              <a href="https://www.trip.com/t/arbW258xJT2" target="_blank" rel="noopener noreferrer" class="sitemap-link text-blue-600 hover:text-blue-700 font-semibold">
+                Reserve Your Stay
+                <span class="text-sm text-gray-500">↗</span>
+              </a>
+              <p class="text-gray-600 text-sm">Direct booking on Trip.com</p>
+            </li>
+            <li>
+              <a href="https://apps.apple.com/us/app/trip-com-book-flights-hotels/id681752345" target="_blank" rel="noopener noreferrer" class="sitemap-link text-blue-600 hover:text-blue-700 font-semibold">
+                Trip.com App Store
+                <span class="text-sm text-gray-500">↗</span>
+              </a>
+              <p class="text-gray-600 text-sm">Download Trip.com on iOS</p>
+            </li>
+            <li>
+              <a href="https://play.google.com/store/apps/details?id=ctrip.english" target="_blank" rel="noopener noreferrer" class="sitemap-link text-blue-600 hover:text-blue-700 font-semibold">
+                Trip.com Google Play
+                <span class="text-sm text-gray-500">↗</span>
+              </a>
+              <p class="text-gray-600 text-sm">Download Trip.com on Android</p>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="mt-12 bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl shadow-lg p-8 text-white">
+        <h2 class="text-2xl font-bold mb-6">Site Overview</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div>
+            <p class="text-blue-100 text-sm">Total Pages</p>
+            <p class="text-3xl font-bold">14</p>
+          </div>
+          <div>
+            <p class="text-blue-100 text-sm">Featured Cities</p>
+            <p class="text-3xl font-bold">5</p>
+          </div>
+          <div>
+            <p class="text-blue-100 text-sm">Company Sections</p>
+            <p class="text-3xl font-bold">4</p>
+          </div>
+          <div>
+            <p class="text-blue-100 text-sm">Legal Pages</p>
+            <p class="text-3xl font-bold">5</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page Descriptions -->
+      <div class="mt-12 bg-white rounded-2xl shadow-lg p-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Page Descriptions</h2>
+        
+        <div class="space-y-4 text-gray-700 text-sm leading-relaxed">
+          <p><strong>Home (index.html):</strong> Landing page with hero section, featured city cards, feedback form, and footer with app download links and navigation.</p>
+          
+          <p><strong>About (about.html):</strong> Company information including mission statement, core values, and reasons to choose HotelDeals.</p>
+          
+          <p><strong>FAQ (faq.html):</strong> Expandable frequently asked questions covering booking, payments, support, and platform information.</p>
+          
+          <p><strong>Blog (blog.html):</strong> Travel blog with featured articles, destination guides, and tips for maximizing savings.</p>
+          
+          <p><strong>Careers (careers.html):</strong> Job listings with descriptions for positions like Affiliate Manager, Content Creator, and Data Analyst.</p>
+          
+          <p><strong>Legal (legal.html):</strong> Compliance information covering regulatory standards, data protection, and business licensing.</p>
+          
+          <p><strong>Terms (terms.html):</strong> Complete terms of use covering booking, affiliate program participation, intellectual property, and liability.</p>
+          
+          <p><strong>Privacy (privacy.html):</strong> Detailed privacy policy explaining data collection, usage, security measures, and user rights.</p>
+          
+          <p><strong>Cookies (cookies.html):</strong> Comprehensive cookie policy with types of cookies used, settings, and user control options.</p>
+          
+          <p><strong>Sitemap (sitemap.html):</strong> Complete navigation map of all pages with descriptions and quick access links (you are here).</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-gradient-to-r from-blue-900 to-blue-800 text-gray-100 mt-12">
+  <div class="max-w-7xl mx-auto px-4 py-12">
+    <div class="border-t border-blue-700 mb-4"></div>
+    <div class="text-center text-gray-300 text-xs">
+      <p>© 2026 HotelDeals. All rights reserved. | Proudly affiliated with <a href="https://www.trip.com" class="hover:text-white transition">Trip.com</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const nav = document.querySelector('nav');
+window.addEventListener('scroll', () => {
+  if(window.scrollY > 20) nav.classList.add('nav--scrolled'); else nav.classList.remove('nav--scrolled');
+});
+</script>
+
+</body>
+</html>

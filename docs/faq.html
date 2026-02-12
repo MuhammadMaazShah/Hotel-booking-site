@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ | HotelDeals - Hotel Booking Questions Answered</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+html { scroll-behavior: smooth; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.page-container { animation: fadeIn 0.6s ease forwards; }
+
+.nav--scrolled { box-shadow: 0 10px 30px rgba(2, 6, 23, 0.06); backdrop-filter: blur(6px); }
+
+.faq-item {
+  transition: all 0.3s ease;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.faq-answer {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+</style>
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+<!-- NAVBAR -->
+<nav class="fixed w-full z-40 bg-white/90 backdrop-blur border-b">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    <a href="index.html" class="text-xl font-bold text-blue-600">HotelDeals</a>
+    <div class="hidden md:flex gap-6">
+      <a href="index.html" class="hover:text-blue-600">Home</a>
+      <a href="index.html#cities" class="hover:text-blue-600">Cities</a>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE CONTENT -->
+<div class="page-container">
+  
+  <!-- HERO SECTION -->
+  <section class="pt-28 pb-12 px-4 bg-gradient-to-br from-blue-50 to-blue-100">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h1>
+      <p class="text-lg text-gray-700 mb-6">Find answers to common questions about our platform and booking process</p>
+      <a href="index.html" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+        ← Back to Home
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTENT SECTION -->
+  <section class="py-16 px-4">
+    <div class="max-w-3xl mx-auto">
+      
+      <div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+        
+        <!-- FAQ Items -->
+        <div class="space-y-4">
+          
+          <div class="faq-item border rounded-lg overflow-hidden">
+            <button onclick="this.parentElement.classList.toggle('open')" class="w-full text-left p-6 bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center">
+              <h3 class="text-lg font-semibold text-gray-900">How does HotelDeals work?</h3>
+              <span class="text-blue-600 font-bold">+</span>
+            </button>
+            <div class="faq-answer p-6 border-t bg-white">
+              <p class="text-gray-700">HotelDeals connects you with Trip.com's extensive hotel database. Simply search for your destination, check prices and reviews, and book through our secure platform. You'll be directed to Trip.com for payment processing.</p>
+            </div>
+          </div>
+
+          <div class="faq-item border rounded-lg overflow-hidden">
+            <button onclick="this.parentElement.classList.toggle('open')" class="w-full text-left p-6 bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center">
+              <h3 class="text-lg font-semibold text-gray-900">Are your prices the best available?</h3>
+              <span class="text-blue-600 font-bold">+</span>
+            </button>
+            <div class="faq-answer p-6 border-t bg-white">
+              <p class="text-gray-700">We offer competitive pricing through Trip.com's extensive hotel partnerships. While we strive for the best deals, we recommend comparing prices on multiple platforms to ensure you're getting the best rate for your specific travel dates.</p>
+            </div>
+          </div>
+
+          <div class="faq-item border rounded-lg overflow-hidden">
+            <button onclick="this.parentElement.classList.toggle('open')" class="w-full text-left p-6 bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center">
+              <h3 class="text-lg font-semibold text-gray-900">Is it safe to book through HotelDeals?</h3>
+              <span class="text-blue-600 font-bold">+</span>
+            </button>
+            <div class="faq-answer p-6 border-t bg-white">
+              <p class="text-gray-700">Yes, we use industry-standard SSL encryption and secure payment processing through Trip.com. All transactions are protected, and your personal information is handled according to our privacy policy.</p>
+            </div>
+          </div>
+
+          <div class="faq-item border rounded-lg overflow-hidden">
+            <button onclick="this.parentElement.classList.toggle('open')" class="w-full text-left p-6 bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center">
+              <h3 class="text-lg font-semibold text-gray-900">Can I modify or cancel my booking?</h3>
+              <span class="text-blue-600 font-bold">+</span>
+            </button>
+            <div class="faq-answer p-6 border-t bg-white">
+              <p class="text-gray-700">Modification and cancellation policies depend on the specific hotel's terms. Most bookings can be modified or cancelled, but some non-refundable rates may have restrictions. Always check the cancellation policy before booking.</p>
+            </div>
+          </div>
+
+          <div class="faq-item border rounded-lg overflow-hidden">
+            <button onclick="this.parentElement.classList.toggle('open')" class="w-full text-left p-6 bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center">
+              <h3 class="text-lg font-semibold text-gray-900">How long does customer support take to respond?</h3>
+              <span class="text-blue-600 font-bold">+</span>
+            </button>
+            <div class="faq-answer p-6 border-t bg-white">
+              <p class="text-gray-700">Our support team aims to respond within 24 hours. For urgent issues, we offer real-time chat support during business hours. For matters related to existing bookings, Trip.com's support team provides 24/7 assistance.</p>
+            </div>
+          </div>
+
+          <div class="faq-item border rounded-lg overflow-hidden">
+            <button onclick="this.parentElement.classList.toggle('open')" class="w-full text-left p-6 bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center">
+              <h3 class="text-lg font-semibold text-gray-900">What payment methods do you accept?</h3>
+              <span class="text-blue-600 font-bold">+</span>
+            </button>
+            <div class="faq-answer p-6 border-t bg-white">
+              <p class="text-gray-700">Trip.com accepts all major credit cards, debit cards, digital wallets, and local payment methods depending on your country. The payment page will show all available options for your location.</p>
+            </div>
+          </div>
+
+          <div class="faq-item border rounded-lg overflow-hidden">
+            <button onclick="this.parentElement.classList.toggle('open')" class="w-full text-left p-6 bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center">
+              <h3 class="text-lg font-semibold text-gray-900">Do you offer group bookings?</h3>
+              <span class="text-blue-600 font-bold">+</span>
+            </button>
+            <div class="faq-answer p-6 border-t bg-white">
+              <p class="text-gray-700">Yes, many hotels offer special group rates. Contact our support team with your group details (number of guests, date range, and destination) for personalized assistance in finding the best rates.</p>
+            </div>
+          </div>
+
+          <div class="faq-item border rounded-lg overflow-hidden">
+            <button onclick="this.parentElement.classList.toggle('open')" class="w-full text-left p-6 bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center">
+              <h3 class="text-lg font-semibold text-gray-900">How can I use promo codes or discounts?</h3>
+              <span class="text-blue-600 font-bold">+</span>
+            </button>
+            <div class="faq-answer p-6 border-t bg-white">
+              <p class="text-gray-700">Promotional codes can be entered during the booking process on Trip.com's platform. Check our blog for active deals and exclusive codes for HotelDeals users.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl shadow-lg p-8 text-white">
+        <h2 class="text-2xl font-bold mb-4">Still Have Questions?</h2>
+        <p class="text-blue-100 mb-6">Our support team is ready to help you with any booking questions or concerns.</p>
+        <a href="index.html#feedback" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
+          Contact Support
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-gradient-to-r from-blue-900 to-blue-800 text-gray-100 mt-12">
+  <div class="max-w-7xl mx-auto px-4 py-12">
+    <div class="border-t border-blue-700 mb-4"></div>
+    <div class="text-center text-gray-300 text-xs">
+      <p>© 2026 HotelDeals. All rights reserved. | Proudly affiliated with <a href="https://www.trip.com" class="hover:text-white transition">Trip.com</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const nav = document.querySelector('nav');
+window.addEventListener('scroll', () => {
+  if(window.scrollY > 20) nav.classList.add('nav--scrolled'); else nav.classList.remove('nav--scrolled');
+});
+</script>
+
+</body>
+</html>

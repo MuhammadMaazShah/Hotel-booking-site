@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Blog | HotelDeals - Tips, Guides & Hotel Insights</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+html { scroll-behavior: smooth; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.page-container { animation: fadeIn 0.6s ease forwards; }
+
+.nav--scrolled { box-shadow: 0 10px 30px rgba(2, 6, 23, 0.06); backdrop-filter: blur(6px); }
+
+.blog-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+</style>
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+<!-- NAVBAR -->
+<nav class="fixed w-full z-40 bg-white/90 backdrop-blur border-b">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    <a href="index.html" class="text-xl font-bold text-blue-600">HotelDeals</a>
+    <div class="hidden md:flex gap-6">
+      <a href="index.html" class="hover:text-blue-600">Home</a>
+      <a href="index.html#cities" class="hover:text-blue-600">Cities</a>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE CONTENT -->
+<div class="page-container">
+  
+  <!-- HERO SECTION -->
+  <section class="pt-28 pb-12 px-4 bg-gradient-to-br from-blue-50 to-blue-100">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Travel Blog</h1>
+      <p class="text-lg text-gray-700 mb-6">Insider tips, destination guides, and exclusive travel deals to inspire your next adventure</p>
+      <a href="index.html" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+        ← Back to Home
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTENT SECTION -->
+  <section class="py-16 px-4">
+    <div class="max-w-5xl mx-auto">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        
+        <!-- Blog Card 1 -->
+        <article class="blog-card bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div class="h-48 bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center">
+            <span class="text-4xl">🏛️</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Top 10 Hidden Gems in Southeast Asia</h3>
+            <p class="text-gray-600 mb-4">Discover lesser-known destinations that offer authentic experiences and incredible value for budget-conscious travelers.</p>
+            <a href="#" class="text-blue-600 font-semibold hover:text-blue-700">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Blog Card 2 -->
+        <article class="blog-card bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div class="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+            <span class="text-4xl">🎒</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Budget Travel Guide: Europe on $50/Day</h3>
+            <p class="text-gray-600 mb-4">Learn how to explore Europe without breaking the bank. Tips for finding affordable hotels, food, and attractions.</p>
+            <a href="#" class="text-blue-600 font-semibold hover:text-blue-700">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Blog Card 3 -->
+        <article class="blog-card bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div class="h-48 bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center">
+            <span class="text-4xl">❄️</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Winter Holiday Destinations You Must Visit</h3>
+            <p class="text-gray-600 mb-4">Explore magical winter destinations perfect for holiday getaways with family and friends.</p>
+            <a href="#" class="text-blue-600 font-semibold hover:text-blue-700">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Blog Card 4 -->
+        <article class="blog-card bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+            <span class="text-4xl">📱</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Affiliate Marketing Tips for Travel Bloggers</h3>
+            <p class="text-gray-600 mb-4">Maximize your earnings as a travel influencer with proven strategies and best practices.</p>
+            <a href="#" class="text-blue-600 font-semibold hover:text-blue-700">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Blog Card 5 -->
+        <article class="blog-card bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+            <span class="text-4xl">💰</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">How to Maximize Your Earnings in 2026</h3>
+            <p class="text-gray-600 mb-4">Strategic insights into seasonal travel trends and high-commission opportunities throughout the year.</p>
+            <a href="#" class="text-blue-600 font-semibold hover:text-blue-700">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Blog Card 6 -->
+        <article class="blog-card bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div class="h-48 bg-gradient-to-br from-pink-400 to-pink-600 flex items-center justify-center">
+            <span class="text-4xl">✈️</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Flight + Hotel Combos That Save You Money</h3>
+            <p class="text-gray-600 mb-4">Discover how to bundle bookings for maximum savings on your next vacation package.</p>
+            <a href="#" class="text-blue-600 font-semibold hover:text-blue-700">Read More →</a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl shadow-lg p-8 text-white">
+        <h2 class="text-2xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+        <p class="text-blue-100 mb-6">Get exclusive travel tips, insider deals, and new blog posts delivered to your inbox weekly.</p>
+        <form class="flex gap-4">
+          <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-lg text-gray-900" required>
+          <button type="submit" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
+            Subscribe
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-gradient-to-r from-blue-900 to-blue-800 text-gray-100 mt-12">
+  <div class="max-w-7xl mx-auto px-4 py-12">
+    <div class="border-t border-blue-700 mb-4"></div>
+    <div class="text-center text-gray-300 text-xs">
+      <p>© 2026 HotelDeals. All rights reserved. | Proudly affiliated with <a href="https://www.trip.com" class="hover:text-white transition">Trip.com</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const nav = document.querySelector('nav');
+window.addEventListener('scroll', () => {
+  if(window.scrollY > 20) nav.classList.add('nav--scrolled'); else nav.classList.remove('nav--scrolled');
+});
+</script>
+
+</body>
+</html>
